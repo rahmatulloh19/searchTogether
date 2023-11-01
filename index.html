@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/normalize.min.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Usersf</title>
+	</head>
+	<body>
+		<div class="container">
+			<form class="js-form d-flex justify-content-between mt-3">
+				<select class="form-control w-25">
+					<option selected hidden>Gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+
+				<input class="form-control w-25 js-input" type="text" placeholder="countries..." />
+
+				<label>
+					<input class="js-range d-block" type="range" max="100" min="0" value="0" />
+				</label>
+				<label>
+					<input class="js-range d-block" type="range" max="100" min="0" value="100" />
+				</label>
+
+				<button class="btn btn-primary" type="submit">Search...</button>
+			</form>
+			<ul class="js-list gap-3 list-unstyled mt-5"></ul>
+		</div>
+		<script src="./js/user.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
